@@ -1,0 +1,28 @@
+{
+  "name": "eslint-plugin-smt",
+  "version": "0.0.1",
+  "description": "Rules that benefit from using an SMT solver.",
+  "author": "Dmitry Blotsky <dblotsky@uwaterloo.ca>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dblotsky/eslint-plugin-smt"
+  },
+  "scripts": {
+    "test": "npm run lint; npm run style; npm run mocha",
+    "style": "./node_modules/.bin/jscs lib",
+    "lint": "./node_modules/.bin/eslint lib",
+    "mocha": "./node_modules/.bin/mocha tests/**/*.js"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0",
+    "node-smt2": ">= 0.0.0",
+    "node-z3str2": ">= 0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.5.3",
+    "jscs": "^2.11.0",
+    "mocha": "^2.4.5"
+  },
+  "main": "lib/index.js",
+  "license": "MIT"
+}
